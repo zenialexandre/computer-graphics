@@ -1,7 +1,7 @@
-﻿using OpenTK.Mathematics;
-using OpenTK.Windowing.Desktop;
+﻿using OpenTK.Windowing.Desktop;
+using OpenTK.Mathematics;
 
-namespace Exercises.WindowCreation
+namespace Exercises.HelloTriangle
 {
     public static class Program
     {
@@ -10,7 +10,7 @@ namespace Exercises.WindowCreation
             var nativeWindowSettings = new NativeWindowSettings()
             {
                 ClientSize = new Vector2i(800, 600),
-                Title = "Window Creation Example"
+                Title = "Creating a Triangle"
             };
 
             using var window = new Window(GameWindowSettings.Default, nativeWindowSettings);
